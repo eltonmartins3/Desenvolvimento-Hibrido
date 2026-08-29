@@ -9,6 +9,8 @@
      igual à sintaxe clássica, sem precisar de import/module -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<!--Importação das credencias do firebase -->
+<script src = "firebase-config.js"></script>
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -142,14 +144,7 @@
   // ======================================================
   // 1. COLE AQUI O firebaseConfig DO SEU PROJETO
   // ======================================================
-const firebaseConfig = {
-  apiKey: "AIzaSyDo07YBt4bs2_Wo-tmf6oa3BJBJdiOWECY",
-  authDomain: "desenvolvimento-hibrido-64872.firebaseapp.com",
-  projectId: "desenvolvimento-hibrido-64872",
-  storageBucket: "desenvolvimento-hibrido-64872.firebasestorage.app",
-  messagingSenderId: "760939303122",
-  appId: "1:760939303122:web:e82874a92f89017448dd0b"
-};
+
 
   firebase.initializeApp(firebaseConfig);
   const auth = firebase.auth();
